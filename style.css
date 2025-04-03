@@ -1,15 +1,74 @@
-body{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    display: flex;
+html{
+    font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-#message{
-    color: black;
-    font-size: 3em;
+body{
+    width: 97%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    height: 62px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+}
+
+#toolbar{
+    padding-top: 0.5em;
+    display: flex;
+    gap: 0.2em;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+h6{
+    color: #333;
+    font-size: 10px;
+    font-weight: 100;
+    padding-top: 0;
+    padding-bottom: 1px;
+    word-spacing: 1px;
+    line-height: 100%;
+}
+
+li{
+    float: left;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+a{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    color: #666;
+    border-top: 10px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+footer{
+    border-bottom: black solid 1px;
 }
