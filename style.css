@@ -1,5 +1,6 @@
 html{
     font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 body{
@@ -7,6 +8,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 #title{
@@ -83,5 +85,26 @@ footer p {
 }
 
 footer{
-    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+    margin-top: auto;
+}
+
+#content {
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+
+#content.hidden {
+    opacity: 0;
+}
+
+.center_text{
+    text-align: center;
+
+}
+
+#projLoad{
+    justify-content: space-around;
+    padding: 1em;
+    margin-top: 1em;
 }
