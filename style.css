@@ -3,17 +3,18 @@ html{
 }
 
 body{
-    width: 97%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 #title{
-    height: 62px;
+    height: 2em;
     display: flex;
     align-items: flex-end;
-    font-size: 18px;
+    font-size: 1.5em;
+    margin: 0 0 0.1em 0;
 }
 
 #toolbar{
@@ -22,9 +23,9 @@ body{
     gap: 0.2em;
 }
 
-img{
+#landing_image{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
     object-fit: contain;
 }
@@ -45,22 +46,34 @@ h6{
     line-height: 100%;
 }
 
-li{
-    float: left;
-    padding: 10px;
-    position: relative;
-    text-decoration: none;
-    display: block;
+nav{
+    height: 1.3em;
+    display: flex;
+    gap: .7em;
 }
 
-a{
-    font-size: 14px;
+.content_replacement{
+    font-size: 1em;
     font-style: normal;
     font-weight: 100;
     color: #666;
-    border-top: 10px;
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    user-select: none;
+    height: 100%;
+    justify-self: center;
 }
+
+.content_replacement:hover{
+    color: #444;
+    font-size: 1.1em;
+}
+
+.content_replacement:active{
+    color: #222;    
+}
+
 
 footer p {
     font-size: 10px;
