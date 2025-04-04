@@ -12,10 +12,10 @@ body{
 }
 
 #title{
-    height: 2em;
+    height: 2.1em;
     display: flex;
     align-items: flex-end;
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0 0 0.1em 0;
 }
 
@@ -40,7 +40,7 @@ ul{
 
 h6{
     color: #333;
-    font-size: 10px;
+    font-size: 1.3em;
     font-weight: 100;
     padding-top: 0;
     padding-bottom: 1px;
@@ -49,13 +49,13 @@ h6{
 }
 
 nav{
-    height: 1.3em;
+    height: 2em;
     display: flex;
-    gap: .7em;
+    gap: 1.3em;
 }
 
 .content_replacement{
-    font-size: 1em;
+    font-size: 1.3em;
     font-style: normal;
     font-weight: 100;
     color: #666;
@@ -69,7 +69,7 @@ nav{
 
 .content_replacement:hover{
     color: #444;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .content_replacement:active{
