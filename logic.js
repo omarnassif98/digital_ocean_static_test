@@ -7,34 +7,19 @@ const customFunctions = {
 function renderEventSquares() {
     console.log('tripped custom code yoo')
     const container = document.getElementById('projLoad');
-    container.style.display = 'flex';
-    container.style.flexWrap = 'wrap';
-    container.style.gap = '16px';
+
   
     projectsArray.forEach(event => {
       const box = document.createElement('div');
-      box.style.width = '150px';
-      box.style.height = '150px';
-      box.style.borderRadius = '20px';
-      box.style.background = '#f0f0f0';
-      box.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-      box.style.display = 'flex';
-      box.style.flexDirection = 'column';
-      box.style.justifyContent = 'center';
-      box.style.alignItems = 'center';
-      box.style.padding = '10px';
-      box.style.textAlign = 'center';
-      box.style.fontFamily = 'sans-serif';
+      box.classList.add('project_listing')
   
-      const title = document.createElement('div');
+      const title = document.createElement('span');
+      title.classList.add('project_title')
       title.textContent = event.title;
-      title.style.fontWeight = 'bold';
-      title.style.marginBottom = '8px';
-  
+   
       const timerange = document.createElement('div');
+      timerange.classList.add('project_timerange')
       timerange.textContent = event.timerange;
-      timerange.style.fontSize = '0.9em';
-      timerange.style.color = '#555';
   
       box.appendChild(title);
       box.appendChild(timerange);
