@@ -89,13 +89,19 @@ footer{
     margin-top: auto;
 }
 
-#content {
-    transition: opacity 0.2s;
-    opacity: 0;
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
-#content.hidden {
-    opacity: 0;
+#content {
+    animation: fade-in 1.2s;
+
 }
 
 .center_text{
@@ -129,6 +135,8 @@ footer{
     cursor: pointer;
     transition: all 0.3s;
     user-select: none;
+    text-decoration: none;
+    color: black;
 }
 
 .project_listing:hover{
@@ -144,4 +152,35 @@ footer{
 .project_timerange{
     font-size: .9em;
     color: #555;
+}
+#works_page{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.work_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.work_left{
+    flex: 1;
+}
+
+.work_right{
+    flex: 2;
+}
+
+.work_image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right;
+}
+
+figcaption{
+    float: right;
+    color: #666;
+    font-size: 0.2em;
 }
