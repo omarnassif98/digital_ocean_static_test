@@ -162,14 +162,19 @@ footer{
 .work_row{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3em;
 }
 
 .work_left{
     flex: 1;
+    display: block;
+    margin: auto;
 }
 
 .work_right{
     flex: 2;
+    margin-right: 0;
 }
 
 .work_image{
@@ -179,8 +184,12 @@ footer{
     object-position: right;
 }
 
+.description{
+    text-align: center;
+}
+
 figcaption{
     float: right;
     color: #666;
-    font-size: 0.2em;
+    font-size: 0.8em;
 }
