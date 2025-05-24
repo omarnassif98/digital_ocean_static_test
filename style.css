@@ -55,7 +55,7 @@ nav{
 }
 
 .content_replacement{
-    font-size: 1.3em;
+    font-size: 0.86em;
     font-style: normal;
     font-weight: 100;
     color: #666;
@@ -69,7 +69,7 @@ nav{
 
 .content_replacement:hover{
     color: #444;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .content_replacement:active{
@@ -195,7 +195,9 @@ footer{
 
 .work_left{
     flex: 1;
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
 }
 
 .work_right{
@@ -206,7 +208,7 @@ footer{
 
 .work_title{
     margin: 0;
-    font-size: 2.2em;
+    font-size: 3.3em;
     word-spacing: .1em;
     font-weight: 100;
     line-height: 100%;
@@ -227,12 +229,17 @@ footer{
 
 .description{
     text-align: center;
+
+}
+
+.work_description{
+    font-size: 0.75em;
 }
 
 figcaption{
     float: right;
     color: #666;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 #about_page{
